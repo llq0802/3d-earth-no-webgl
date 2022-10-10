@@ -1,0 +1,72 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background: black;
+}
+
+.container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 50%;
+	top: 50%;
+	overflow: hidden;
+	transform: translate(-50%, -50%);
+}
+
+.container::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	opacity: .5;
+	background: url(https://www.gannett-cdn.com/presto/2018/08/06/USAT/d7e9198a-b2fa-4ca6-b947-31c3751cc248-GettyImages-898660948.jpg?crop=5369,3020,x0,y0&width=3200&height=1800&format=pjpg&auto=webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+} 
+
+.container .Layer {
+	left: 50%;
+	top: 50%;
+	position: relative;
+	transform-origin: 0 0;
+}
+
+.container .Layer img {
+	position: absolute;
+	overflow: hidden;
+	transform-origin: 0 0;
+	user-select: none;
+	background: black;
+	width: 256px;
+	height: 256px;
+}
+
+.container .Layer.level-4::before {
+	content: "";
+	width: 1030px;
+	height: 1030px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	border-radius: 50%;
+	box-shadow: inset 150px 150px 150px #00adff82, inset -150px -150px 150px #000000cc, -29px -27px 78px #0c86cdf5, 30px 30px 40px black, -15px -15px 50px black, -15px 15px 50px black, 15px -15px 50px black;
+	user-select: none;
+}
+
+.container .Layer.level-4::after {
+	content: "";
+	width: 1040px;
+	height: 1040px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	backdrop-filter: blur(5px);
+	-webkit-mask: radial-gradient(circle 512px,transparent 70%,white 100%);
+	border-radius: 50%;
+	user-select: none;
+}

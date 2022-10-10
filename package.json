@@ -1,0 +1,11 @@
+{
+  "name": "3d-earth-no-webgl",
+  "version": "1.0.0",
+  "description": "A Pen created on CodePen.io. Original URL: [https://codepen.io/llq0802/pen/LYmgLWJ](https://codepen.io/llq0802/pen/LYmgLWJ).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "李岚清",
+  "license": "ISC"
+}
